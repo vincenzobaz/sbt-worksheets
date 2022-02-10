@@ -16,7 +16,6 @@ lazy val publishSettings = Def.settings(
   homepage := Some(url("https://github.com/vincenzobaz/sbt-worksheets")),
   sonatypeRepository := "https://s01.oss.sonatype.org/service/local",
   sonatypeCredentialHost := "s01.oss.sonatype.org",
-  publishTo := sonatypePublishToBundle.value,
   developers := List(
     Developer(
       "vincenzobaz",
@@ -25,5 +24,4 @@ lazy val publishSettings = Def.settings(
       url("https://github.com/vincenzobaz/")
     )
   ),
-  sonatypeProjectHosting := Some(GitHubHosting("vincenzobaz", name.value, "bazzucchi.vincenzo@gmail.com"))
 )
