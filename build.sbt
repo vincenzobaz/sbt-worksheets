@@ -11,6 +11,7 @@ lazy val plugin = project
 
 import xerial.sbt.Sonatype._
 lazy val publishSettings = Def.settings(
+  name := "sbt-worksheets",
   organization := "io.github.vincenzobaz",
   homepage := Some(url("https://github.com/vincenzobaz/sbt-worksheets")),
   sonatypeRepository := "https://s01.oss.sonatype.org/service/local",
