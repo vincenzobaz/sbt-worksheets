@@ -7,11 +7,9 @@ lazy val plugin = project
   .settings(
     moduleName := "sbt-worksheets",
     addSbtPlugin("org.scalameta" % "sbt-mdoc" % "2.3.0")
-  ).settings(publishSettings)
+  )
 
-import xerial.sbt.Sonatype._
-lazy val publishSettings = Def.settings(
-  name := "sbt-worksheets",
+inThisBuild(List(
   organization := "io.github.vincenzobaz",
   homepage := Some(url("https://github.com/vincenzobaz/sbt-worksheets")),
   sonatypeRepository := "https://s01.oss.sonatype.org/service/local",
@@ -24,4 +22,4 @@ lazy val publishSettings = Def.settings(
       url("https://github.com/vincenzobaz/")
     )
   ),
-)
+))
