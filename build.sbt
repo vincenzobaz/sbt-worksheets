@@ -12,6 +12,7 @@ lazy val plugin = project
 inThisBuild(List(
   organization := "io.github.vincenzobaz",
   homepage := Some(url("https://github.com/vincenzobaz/sbt-worksheets")),
+  licenses := List("Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")),
   sonatypeRepository := "https://s01.oss.sonatype.org/service/local",
   sonatypeCredentialHost := "s01.oss.sonatype.org",
   developers := List(
